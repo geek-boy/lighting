@@ -7,7 +7,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             target: {
                 tabId: tabId
             },
-            files: ["./style.css"]
+            files: ["./case-view/case-view.css"]
         }, () => {
             console.log("CSS -> inserted");
         })

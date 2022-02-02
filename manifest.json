@@ -1,9 +1,9 @@
 {
-    "name": "Service Console Acquia Extension",
-    "description": "Adding colors to comments feed.",
+    "name": "Service Console Extension",
+    "description": "Lighting",
     "version": "0.1.0",
     "manifest_version": 3,
-    "background":{
+    "background": {
         "service_worker": "./background.js"
     },
     "permissions": [
@@ -12,5 +12,12 @@
     ],
     "host_permissions": [
         "https://acquia.lightning.force.com/lightning/r/Case/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.lightning.force.com/*"],
+            "js": ["./queue-refresh/queue-refresh.js"],
+            "css": ["./queue-refresh/queue-refresh.css"]
+        }
     ]
 }

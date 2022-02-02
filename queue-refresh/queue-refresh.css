@@ -1,0 +1,34 @@
+#service-console-extension-btn {
+  padding-top: 13px;
+  padding-right:10px;
+}
+
+#service-console-extension-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#service-console-extension-menu {
+  position: fixed;
+  background-color: white;
+  color: grey;
+  border-radius: 3px;
+  border: 3px solid black;
+  padding: 15px;
+  width: auto;
+  bottom: 40px;
+  right: 0;
+  z-index: 1000;
+}
+
+#service-console-extension-menu > * {
+  padding: 7px;
+}
+
+.service-console-extension-disabled {
+  position: absolute;
+  transform: scale3d(0.1);
+  z-index: -1000;
+  top: 10000px;
+}
