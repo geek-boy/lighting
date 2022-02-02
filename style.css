@@ -1,12 +1,38 @@
-/*
+/**
+ * SINGLE CASE VIEW
+ */
+
+/**
+ * Layout for cases
+ */
+
+/**
+ * Main panel
+ */
+.region-main[flexipage-recordHomeTemplateDesktop2_recordHomeTemplateDesktop2] {
+    width: 75%;
+}
+
+
+/**
+ * Righthand panel
+ */
+.region-sidebar-right[flexipage-recordHomeTemplateDesktop2_recordHomeTemplateDesktop2] {
+    width: 25% !important;
+}
+
+
+/**
  * TABS
  * This section defines styles that create 
  * tabs for articles within the case feed
-*/
+ */
 
-/* This sub-section defines the unique
+
+/** 
+ * This sub-section defines the unique
  * styles for the tab of each feed type
-*/
+ */
 article[data-type="TextPost"]::before,
 article[data-type="LinkPost"]::before,
 article[data-type="ContentPost"]::before {
@@ -25,7 +51,7 @@ article[data-type="CaseCommentPost"]::before {
 }
 
 article[data-type="MilestoneEvent"]::before {
-    content: "⏰ SLA";
+    content: "SLA";
     background-color: mistyrose;
     border: 1px solid lightpink;
     color: red;
@@ -38,11 +64,12 @@ article[data-type="CallLogPost"]::before {
     color: cadetblue;
 }
 
-/* This sub-section defines the common 
- * styles for the descriptive tab */
+/* 
+ * This sub-section defines the common styles for the descriptive tab 
+ */
 article[data-type="TextPost"]::before,
 article[data-type="LinkPost"]::before,
-article[data-type="ContentPost"]::before, 
+article[data-type="ContentPost"]::before,
 article[data-type="EmailMessageEvent"]::before,
 article[data-type="CaseCommentPost"]::before,
 article[data-type="MilestoneEvent"]::before,
@@ -60,15 +87,15 @@ article[data-type="CallLogPost"]::before{
     z-index: 3;
 }
 
-/*
- * MAIN BODY (ARTICLES)
- * This section defines styles that alter 
- * select articles within the case feed
-*/
 
-/* This sub-section defines the unique 
- * styles for each feed type
-*/
+/**
+ * Main body (articles)
+ * This section defines styles that alter select articles within the case feed.
+ */
+
+/** 
+ * This sub-section defines the unique styles for each feed type
+ */
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
 article[data-type="ContentPost"] {
@@ -93,8 +120,9 @@ article[data-type="CallLogPost"] {
 }
 
 
-/* This sub-section defines the common 
- * styles for the feed articles */
+/** 
+ * This sub-section defines the common styles for the feed articles
+ */
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
 article[data-type="ContentPost"],
