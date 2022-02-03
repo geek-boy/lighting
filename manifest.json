@@ -16,7 +16,10 @@
     "content_scripts": [
         {
             "matches": ["*://*.lightning.force.com/*"],
-            "js": ["./queue-refresh/queue-refresh.js"],
+            "js": [
+                "./sce-settings-view/view.js",
+                "./queue-refresh/queue-refresh.js"
+            ],
             "css": [
                 "./queue-refresh/queue-refresh.css",
                 "./case-block-elements/case-table.css",

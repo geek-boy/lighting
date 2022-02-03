@@ -5,3 +5,16 @@
 ul.slds-scrollable--y li:nth-child(even) {
   background-color: white;
 }
+
+ul.slds-scrollable--y li .slds-grid div:last-child  span {
+   
+}
+
+ul.slds-scrollable--y li .slds-grid div:last-child  span > span:last-child {
+    padding: 3px 8px 3px 8px;
+    background: #bfbfbf;
+    border-radius: 10px;
+    border: 1px solid #fbfbfb;
+    display:block;
+    float:left;
+}
