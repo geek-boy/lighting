@@ -17,7 +17,11 @@
         {
             "matches": ["*://*.lightning.force.com/*"],
             "js": ["./queue-refresh/queue-refresh.js"],
-            "css": ["./queue-refresh/queue-refresh.css"]
+            "css": [
+                "./queue-refresh/queue-refresh.css",
+                "./case-block-elements/case-table.css",
+                "./case-block-elements/case-ul.css" 
+            ]
         }
     ]
 }

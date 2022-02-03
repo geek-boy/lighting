@@ -1,0 +1,7 @@
+/**
+ * Case Tables
+ */
+
+ul.slds-scrollable--y li:nth-child(even) {
+  background-color: white;
+}

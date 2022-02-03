@@ -29,6 +29,12 @@
     padding-top: 15px !important;
 }
 
+/**
+ * Margin for each row set
+ */
+.supportCompactFeedItem article.cuf-feedElement.cuf-feedElement {
+    margin-bottom: 20px;
+}
 
 /**
  * TABS
@@ -129,5 +135,3 @@ article[data-type="CallLogPost"]::before {
     border: 1px solid #7bcbce;
     color: cadetblue;
 }
-
-
