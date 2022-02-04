@@ -11,6 +11,16 @@ var secondCounter = 0;
  * @returns mixed
  */
 function mainbody() {
+    viewSettingSetup();
+    queueTimer();
+}
+
+
+/**
+ * 
+ * @returns mixed
+ */
+function viewSettingSetup() {
     let utilityBar = document.querySelector(".oneUtilityBar.slds-utility-bar_container > ul");
     if (utilityBar === null) {
         return;
@@ -24,9 +34,8 @@ function mainbody() {
         toggleMenuAttach();
         addMenu();
     }
-
-    queueTimer();
 }
+
 
 /**
  * 
@@ -180,7 +189,6 @@ function toggleMenuAttach() {
 
 /**
  * 
- * @param {type} secondCounter 
  * @returns void
  */
 function queueTimer() {
