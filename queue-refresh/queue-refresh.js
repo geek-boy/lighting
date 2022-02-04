@@ -11,23 +11,21 @@ var secondCounter = 0;
  * @returns mixed
  */
 function mainbody() {
-    secondCounter = secondCounter + 1;
     let utilityBar = document.querySelector(".oneUtilityBar.slds-utility-bar_container > ul");
     if (utilityBar === null) {
         return;
     }
-
 
     if (utilityBar.lastElementChild.innerText !== "SCE settings") {
         let li = document.createElement("li");
         li.id = "service-console-extension-btn";
         li.innerText = "SCE settings";
         utilityBar.append(li);
-        configuration();
+        toggleMenuAttach();
         addMenu();
     }
 
-    queueTimer(secondCounter);
+    queueTimer();
 }
 
 /**
@@ -171,7 +169,7 @@ function storeTimer(selection) {
  * 
  * @returns void
  */
-function configuration() {
+function toggleMenuAttach() {
     var widgetbtn = document.getElementById('service-console-extension-btn');
     if (window.addEventListener) {
         widgetbtn.addEventListener('click', toggleMenu, false);
@@ -185,7 +183,8 @@ function configuration() {
  * @param {type} secondCounter 
  * @returns void
  */
-function queueTimer(secondCounter) {
+function queueTimer() {
+    secondCounter = secondCounter + 1;
     let qTimer = 0;
     switch (localStorage.getItem("refreshTimer")) {
         case "0":
@@ -246,7 +245,7 @@ function tableRefresh() {
 
 /**
  * 
- * @returns {undefined}
+ * @returns void
  */
 function feedRefresh() {
     console.log("==> Enter feed refresh");
