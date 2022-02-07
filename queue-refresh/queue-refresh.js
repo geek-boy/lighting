@@ -8,40 +8,9 @@ var secondCounter = 0;
 
 /**
  * 
- * @returns mixed
- */
-function mainbody() {
-    viewSettingSetup();
-    queueTimer();
-}
-
-
-/**
- * 
- * @returns mixed
- */
-function viewSettingSetup() {
-    let utilityBar = document.querySelector(".oneUtilityBar.slds-utility-bar_container > ul");
-    if (utilityBar === null) {
-        return;
-    }
-
-    if (utilityBar.lastElementChild.innerText !== "SCE settings") {
-        let li = document.createElement("li");
-        li.id = "service-console-extension-btn";
-        li.innerText = "SCE settings";
-        utilityBar.append(li);
-        toggleMenuAttach();
-        addMenu();
-    }
-}
-
-
-/**
- * 
  * @returns void
  */
-function addMenu() {
+function refreshMenu() {
     console.log("Local storage: " + localStorage.getItem("refreshTimer"));
     let divEle = document.createElement("div");
     let pEle = document.createElement("p");
@@ -150,14 +119,6 @@ function addMenu() {
     document.body.append(divEle);
 }
 
-/**
- * 
- * @returns void
- */
-function toggleMenu() {
-    let menuReveal = document.getElementById("service-console-extension-menu");
-    menuReveal.classList.toggle("service-console-extension-disabled");
-}
 
 /**
  * 

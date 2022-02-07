@@ -17,8 +17,8 @@
         {
             "matches": ["*://*.lightning.force.com/*"],
             "js": [
-                "./sce-settings-view/view.js",
-                "./queue-refresh/queue-refresh.js"
+                "./queue-refresh/queue-refresh.js",
+                "./init.js"
             ],
             "css": [
                 "./queue-refresh/queue-refresh.css",

@@ -1,3 +1,8 @@
+:root {
+  --internal-color: #FFF6D9;
+}
+
+
 /**
  * SINGLE CASE VIEW
  */
@@ -46,8 +51,8 @@
 }
 
 /**
- * TABS
- * This section defines styles that create tabs for articles within the case feed
+ * FEED EMAIL 
+ * This section defines styles within email case feed.
  */
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
@@ -91,7 +96,7 @@ article[data-type="CallLogPost"]::before{
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
 article[data-type="ContentPost"] {
-    background-color: #FFF6D9;
+    background-color:var(--internal-color);
     border-color: #EFDAA3 !important;
 }
 
@@ -99,7 +104,7 @@ article[data-type="TextPost"]::before,
 article[data-type="LinkPost"]::before,
 article[data-type="ContentPost"]::before {
     content: "INTERNAL";
-    background-color: #FFF6D9;
+    background-color:var(--internal-color);
     border: 1px solid #EFDAA3;
     color: goldenrod;
 }
@@ -144,3 +149,13 @@ article[data-type="CallLogPost"]::before {
     border: 1px solid #7bcbce;
     color: cadetblue;
 }
+
+
+/**
+ * POST EMAIL 
+ * This section defines styles for articles within the post case feed.
+ */
+.forceChatterTextPostDesktop{
+    background-color:var(--internal-color);
+}
+
