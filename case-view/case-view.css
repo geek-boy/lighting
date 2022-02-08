@@ -159,3 +159,16 @@ article[data-type="CallLogPost"]::before {
     background-color:var(--internal-color);
 }
 
+/**
+ * LEFTHAND sidebar case view 
+ * This section defines styles the case views in a ticket view.
+ */
+.forceListViewManagerPrimaryDisplayManager .forceVirtualRecordList .slds-grid {
+    display: inherit;
+}
+
+.forceListViewManagerPrimaryDisplayManager .forceVirtualRecordList .forceOutputPlainText{
+    display:block;
+    padding:10px 0 10px 0;
+    white-space: break-spaces !important;
+}
