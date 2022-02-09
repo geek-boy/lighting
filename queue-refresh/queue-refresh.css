@@ -32,3 +32,10 @@
   z-index: -1000;
   top: 10000px;
 }
+
+/**
+ * Showing toogl timer in sidebar.
+ */
+.toggl-button.salesforce-list{
+    visibility: visible !important;
+}
