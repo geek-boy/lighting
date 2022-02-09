@@ -27,7 +27,7 @@ function viewInit() {
         li.id = "service-console-extension-btn";
         li.innerText = "SCE settings";
         utilityBar.append(li);
-        refreshMenu();
+        queueRefresh();
         toggleMenuAttach();
     }
 }

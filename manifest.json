@@ -23,7 +23,8 @@
             "css": [
                 "./queue-refresh/queue-refresh.css",
                 "./case-block-elements/case-table.css",
-                "./case-block-elements/case-ul.css" 
+                "./case-block-elements/case-ul.css", 
+                "./case-view-right/right-boxes.css"
             ]
         }
     ]

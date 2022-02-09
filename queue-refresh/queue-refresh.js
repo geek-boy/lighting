@@ -10,7 +10,7 @@ var secondCounter = 0;
  * 
  * @returns void
  */
-function refreshMenu() {
+function queueRefresh() {
     console.log("Local storage: " + localStorage.getItem("refreshTimer"));
     let divEle = document.createElement("div");
     let pEle = document.createElement("p");
