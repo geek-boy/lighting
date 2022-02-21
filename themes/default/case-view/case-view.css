@@ -1,5 +1,6 @@
 :root {
-  --internal-color: #FFF6D9;
+  --internal-color: #ff0062;
+  --wild-color: #c0ddb6;
 }
 
 
@@ -103,8 +104,8 @@ article[data-type="CallLogPost"]::before{
 article[data-type="TextPost"],
 article[data-type="LinkPost"],
 article[data-type="ContentPost"] {
-    background-color:var(--internal-color);
-    border-color: #EFDAA3 !important;
+    background-color:var(--wild-color,yellow);
+    border-color: #caafff !important;
 }
 
 article[data-type="TextPost"]::before,
@@ -112,7 +113,7 @@ article[data-type="LinkPost"]::before,
 article[data-type="ContentPost"]::before {
     content: "INTERNAL";
     background-color:var(--internal-color);
-    border: 1px solid #EFDAA3;
+    border: 1px solid #876309;
     color: goldenrod;
 }
 
